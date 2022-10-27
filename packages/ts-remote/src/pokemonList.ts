@@ -1,4 +1,7 @@
-import { Pokemon, PokemonListFunction } from "shared-types";
+export type Pokemon = {
+  name: string;
+  type: string;
+};
 
 const pokemon: Pokemon[] = [
   {
@@ -11,7 +14,6 @@ const pokemon: Pokemon[] = [
   },
 ];
 
-const getList: PokemonListFunction = (nameFilter: string) =>
-  pokemon.filter(({ name }) => name.includes(nameFilter));
+const getList = (nameFilter: string) => pokemon.filter(({ name }) => name.includes(nameFilter));
 
 export default getList;

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": false,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "tsremote-mf/*": ["../ts-remote/src/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}

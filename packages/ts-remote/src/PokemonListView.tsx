@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Pokemon } from "shared-types";
+import { Pokemon } from "./pokemonList";
 
 const PokemonListView = ({ list }: { list: Pokemon[] }) => (
   <table>
